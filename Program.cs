@@ -5,34 +5,34 @@
 // 1 -3,3 8 -9,9
 // 8 7,8 -7,1 9
 
-Console.WriteLine("введите количество строк");
-int rows= Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("введите количество столбцов");
-int columns = Convert.ToInt32(Console.ReadLine());
-double[,] numbers = new double[rows, columns];
+// Console.WriteLine("введите количество строк");
+// int rows= Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("введите количество столбцов");
+// int columns = Convert.ToInt32(Console.ReadLine());
+// double[,] numbers = new double[rows, columns];
 
-FillArrayDoubleNumbers(numbers);
-PrintArray(numbers);
+// FillArrayDoubleNumbers(numbers);
+// PrintArray(numbers);
 
-void FillArrayDoubleNumbers(double[,] array)
-{
-    for (int i = 0; i < array.GetLength(0); i++)
-    {
-        for (int j = 0; j < array.GetLength(1); j++)
-        {
-            array[i, j] = new Random().NextDouble()*10;
-        }
-    }
-}
+// void FillArrayDoubleNumbers(double[,] array)
+// {
+//     for (int i = 0; i < array.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < array.GetLength(1); j++)
+//         {
+//             array[i, j] = new Random().NextDouble()*10;
+//         }
+//     }
+// }
 
-void PrintArray(double[,] array)
-{
-    for (int i = 0; i < array.GetLength(0); i++)
-    {
-        for (int j = 0; j < array.GetLength(1); j++)
-        {
-            Console.Write($"{Math.Round(array[i, j],1)}   ");
-        }
-        Console.WriteLine();
-    }
-}
+// void PrintArray(double[,] array)
+// {
+//     for (int i = 0; i < array.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < array.GetLength(1); j++)
+//         {
+//             Console.Write($"{Math.Round(array[i, j],1)}   ");
+//         }
+//         Console.WriteLine();
+//     }
+// }
